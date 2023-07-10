@@ -1,0 +1,108 @@
+.iiitLogo {
+  width: 60vw;
+  max-width: 22rem;
+  z-index: 2;
+}
+
+.navBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.menuIconWrap {
+  position: relative;
+  height: max(4vw, 1.5rem);
+  width: max(4vw, 1.5rem);
+}
+
+.menuIcon {
+  font-size: max(4vw, 1.5rem);
+  color: white;
+  transform: translate(0, 0.1rem);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+.menuIcon:nth-of-type(1) {
+  z-index: 998;
+}
+
+.menuIcon:nth-of-type(2) {
+  z-index: 997;
+  transform: translate(0.1rem, 0);
+}
+
+.menuBody {
+  padding-top: 0.35rem;
+  background: white;
+  transition: 0.3s;
+  overflow-y: scroll;
+  height: calc(100% - min(9.6vw, 3.5rem) - 2rem);
+}
+
+.menuBody::-webkit-scrollbar {
+  background: transparent;
+  /* color: #ffffff; */
+  width: 0;
+}
+
+.downIcon {
+  transform: translateY(0.2rem);
+  transition: 0.5s;
+}
+
+.item {
+  border-top: 2px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease 0s;
+  border-radius: 7px;
+  transition: 0.2s ease-in;
+  padding: 1rem;
+  margin: 0 0.35rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuBody > .item:first-of-type {
+  border-top: none;
+}
+
+.subItems {
+  transition: 0.5s;
+  /* color: #5c4e4e; */
+  font-size: 1rem;
+  border-left: 0.3rem solid #ff7f00;
+  border-radius: 1rem;
+  padding-left: 0.2rem;
+}
+
+.item:hover {
+  background: #f1f1f1;
+}
+
+.item[open],
+.item[open]:hover {
+  background: #ff7f00;
+  color: white;
+  transition: 0.5s;
+}
+.scrolledBg {
+  width: 100vw;
+
+  position: fixed;
+  background: rgb(28, 28, 28);
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* opacity: 0; */
+  transition: 0.5s;
+  z-index: -2;
+  /* border-radius: 2rem; */
+}

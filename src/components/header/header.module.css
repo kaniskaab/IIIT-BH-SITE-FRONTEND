@@ -1,0 +1,21 @@
+.navBar {
+  z-index: 999;
+  position: fixed;
+  max-width: 70rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1000px) {
+  .navBar {
+    height: 100%;
+    max-width: 100%;
+    width: 100vw;
+    left: unset;
+    transform: unset;
+  }
+
+  .topShadow {
+    height: calc(min(9.6vw, 3.5rem) + 7rem);
+  }
+}
