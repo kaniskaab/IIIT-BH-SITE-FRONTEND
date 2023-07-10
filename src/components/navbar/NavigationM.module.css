@@ -64,7 +64,7 @@
   transition: 0.2s ease-in;
   padding: 1rem;
   margin: 0 0.35rem;
-  font-weight: bold;
+  font-weight: medium;
   display: flex;
   justify-content: space-between;
 }
