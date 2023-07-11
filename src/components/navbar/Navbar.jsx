@@ -1,6 +1,6 @@
 import { FaAngleDown, FaAngleRight, FaBars, FaTimes } from 'react-icons/fa';
 import { useMediaQuery } from 'react-responsive';
-import logoSvg from '../../svg/iiitbbsr.svg';
+import logoSvg from '../../svg/iiitbbsrDark.svg';
 import classes from './Navigation.module.css';
 import classesM from './NavigationM.module.css';
 
@@ -309,8 +309,19 @@ export default function Navbar(props) {
             <div className={classes.mainmenu}>
               <ul className={classes.menu}>
                 {menuData.map((item) => (
-                  <li>
-                    <a href={item.link}>
+                  <li
+                    style={{
+                      hover: { color: 'white' },
+                    }}
+                  >
+                    <a
+                      href={item.link}
+                      className={classes.hoverLink}
+                      style={{
+                        color: headerScrolled || isCommon ? 'white' : 'black',
+                        hover: { color: 'white' },
+                      }}
+                    >
                       {item.name}
                       {item.submenu ? (
                         <FaAngleDown className={classes.icon} />

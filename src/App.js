@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './Pages/Home/home';
 import Footer from './components/Footer/Footer';
 import Header from './components/header/header';
 
@@ -6,9 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      {/* below div is just to check if the navbar working fine or not */}
+      <Home />
       <div className="h-[200vh]"></div>
       <Footer />
+      {/* <ImageCarousel /> */}
     </>
   );
 }

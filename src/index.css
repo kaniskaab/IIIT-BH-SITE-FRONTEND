@@ -10,10 +10,20 @@ body {
   /* font-weight: 100; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #3b004b;
+  background: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.orange-gradient {
+  background: #ff8a00;
+  background: linear-gradient(-90deg, #ff8a00 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #ff8a00 0%,
+    rgba(80, 69, 51, 0) 100%
+  );
 }

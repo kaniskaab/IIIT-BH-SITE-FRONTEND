@@ -32,7 +32,7 @@
   text-align: end;
   padding-top: 1rem;
   font-size: 0.8rem;
-  color: white;
+  color: rgb(36, 36, 36);
   opacity: 0.6;
 }
 
@@ -145,7 +145,13 @@
 
 .menu > li > a {
   font-weight: bold;
+  /* color: black; */
   transition: color 0.3s ease-in;
+}
+.menu > li > a:hover {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: color 0.1s ease-in;
 }
 
 .menu > li > a::after {
@@ -186,7 +192,7 @@
 .scrolledBg {
   width: 95vw;
   position: fixed;
-  background: rgba(28, 28, 28, 0.8);
+  background: rgba(0, 0, 0, 0.708);
   margin-top: 0.1rem;
   top: 0;
   left: 50%;
@@ -195,4 +201,7 @@
   transition: 0.5s;
   z-index: -2;
   border-radius: 2rem;
+}
+.hoverLink:hover {
+  color: white;
 }

@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
+  /* width: 85vw; */
 }
 
 .menuIconWrap {
@@ -27,6 +28,7 @@
   top: 0;
   left: 0;
   transition: 0.2s;
+  filter: invert();
 }
 
 .menuIcon:nth-of-type(1) {
@@ -96,7 +98,7 @@
   width: 100vw;
 
   position: fixed;
-  background: rgb(28, 28, 28);
+  background: rgb(255, 255, 255);
 
   top: 0;
   left: 50%;
