@@ -18,28 +18,40 @@ function Hero() {
         >
           <h>Explore IIIT BBSR</h>
         </div>
-        <div className=" z-[10] lg:scale-[1.2]  xl:scale-[1.5] sm:block hidden absolute pointer-events-none  md:right-8 lg:right-20 xl:right-40 lg:top-60 xl:top-72 md:top-40 sm:top-80 sm:right-[50%]  sm:translate-x-[50%] md:translate-x-[0%]">
-          <img src={heroImg} alt="Hero Image" />
-        </div>
-        <div className="flex lg:pl-32 sm:pl-28 pl-8  lg:pt-72 md:pt-48 pt-32 ">
-          <div className="flex flex-col justify-center items-center ">
-            <div className="w-5 h-5 rounded-full bg-[#FF8A00]" />
-            <div className="w-1 sm:h-80 h-40 orange-gradient" />
+        <motion.div
+          initial={{ opacity: 0, transform: 'translateX(10%)' }}
+          animate={{ opacity: 1, transform: 'translateX(0)' }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className=" z-[10] lg:scale-[1.2]  xl:scale-[1.5] sm:block hidden absolute pointer-events-none  md:right-8 lg:right-20 xl:right-40 lg:top-60 xl:top-72 md:top-40 sm:top-80 sm:right-[50%]  sm:translate-x-[50%] md:translate-x-[0%]">
+            <img src={heroImg} alt="Hero Image" />
           </div>
-          <div className="font-mono pl-4">
-            <h className="  font-bold lg:text-7xl md:text-5xl text-4xl">
-              WELCOME
-            </h>{' '}
-            <br></br>
-            <h className="   lg:text-5xl text-3xl">TO</h> <br></br>
-            <h className="  lg:text-7xl md:text-5xl text-4xl">
-              <span className=" text-[#FF8A00] font-bold">IIIT</span>{' '}
-              <div className="md:hidden"></div>
-              <span className=" text-[#FF8A00] font-bold">BH</span>
-              ubaneswar
-            </h>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="flex lg:pl-32 sm:pl-28 pl-8  lg:pt-72 md:pt-48 pt-32 ">
+            <div className="flex flex-col justify-center items-center ">
+              <div className="w-5 h-5 rounded-full bg-[#FF8A00]" />
+              <div className="w-1 sm:h-80 h-40 orange-gradient" />
+            </div>
+            <div className="font-mono pl-4">
+              <h className="  font-bold lg:text-7xl md:text-5xl text-4xl">
+                WELCOME
+              </h>{' '}
+              <br></br>
+              <h className="   lg:text-5xl text-3xl">TO</h> <br></br>
+              <h className="  lg:text-7xl md:text-5xl text-4xl">
+                <span className=" text-[#FF8A00] font-bold">IIIT</span>{' '}
+                <div className="md:hidden"></div>
+                <span className=" text-[#FF8A00] font-bold">BH</span>
+                ubaneswar
+              </h>
+            </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center">
           <div onClick={handleButtonClick}>
