@@ -11,7 +11,13 @@ function Hero() {
   return (
     <>
       <div className="h-screen relative   ">
-        <div className="h-screen   w-[15vw] right-0 bottom-0 absolute bg-[#C8FFD4]"></div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <div className="h-screen   w-[15vw] right-0 bottom-0 absolute bg-[#C8FFD4]"></div>
+        </motion.div>
         <div
           className="w-full cursor-pointer font-mono text-center  h-[2rem] bottom-0 absolute bg-[#E8E8E8]"
           onClick={handleButtonClick}

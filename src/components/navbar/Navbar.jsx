@@ -112,7 +112,7 @@ export default function Navbar(props) {
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position > window.innerHeight * 0.7) setHeaderScrolled(true);
+    if (position > window.innerHeight * 0.1) setHeaderScrolled(true);
     else if (headerScrolled) setHeaderScrolled(false);
   };
 
