@@ -45,7 +45,7 @@ export const PlacementStats = () => {
               width: percentage * 1300,
               height: percentage * 800,
             }}
-            className="bg-black/50 p-6 rounded-xl pt-20"
+            className=" p-6 rounded-xl pt-20"
           >
             <CardView/>
             </div>
@@ -53,7 +53,7 @@ export const PlacementStats = () => {
     >
       <div className="h-[700px]">
       <p className="h-screen flex flex-col items-center text-[20px] font-poppins">
-        <text className="text-[50px] p-2 w-full flex justify-center text-orange-500 font-bold">Student Stories</text>
+        <text className="text-[50px] p-2 w-full flex justify-center font-bold">Student Stories</text>
 
       </p>
 

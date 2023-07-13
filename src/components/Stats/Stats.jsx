@@ -40,6 +40,7 @@ const Stats = () => {
     <div>
       <section className="py-10 bg-gray-100 sm:py-16 lg:py-10 custom-bg">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="text-5xl font-poppins font-semibold mx-2 flex justify-center">Research Highlights</div>
           <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:my-10 sm:gap-x-8 md:grid-cols-3">
             <div>
               <h3 className="font-bold text-7xl">
