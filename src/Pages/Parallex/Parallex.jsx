@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import Dashboard from '../../components/Dashboard/Dashboard';
 import Director from '../../components/Director/Director';
 import Hero from '../../components/Hero/Hero';
-import './styles.css';
 import { PlacementStats } from '../../components/PlacementStats/PlacementStats';
-import Research from '../../components/ResearchStats/Research';
 import Stats from '../../components/Stats/Stats';
-import Dashboard from '../../components/Dashboard/Dashboard';
+import './styles.css';
 
 const about = `IIIT Bhubaneswar owes its origins to the initiative of the
 Government Odisha. It is a result of the desire of the
@@ -49,7 +48,7 @@ export const Parallex = (props) => {
   };
 
   return (
-    <div className="ddd">
+    <div className="overflow-x-hidden">
       <header class="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img overflow-hidden">
         <div class=" bg-white bg-opacity-50 rounded-xl h-screen w-screen">
           <Hero />
@@ -58,7 +57,7 @@ export const Parallex = (props) => {
       <div class="">
         <p class="mb-4">
           <div>
-          <Dashboard/>
+            <Dashboard />
           </div>
           <div className="w-screen flex">
             <div className="md:5/12 lg:w-5/12">
@@ -122,8 +121,8 @@ export const Parallex = (props) => {
           <Director />
         </p>
       </div>
-      <PlacementStats/>
-      <Stats/>
+      <PlacementStats />
+      <Stats />
     </div>
   );
 };

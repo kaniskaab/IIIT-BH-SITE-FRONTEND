@@ -117,7 +117,7 @@ const Director = (props) => {
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12 ">
               <img
-                className="border rounded-full border-x-[#C8FFD4] border-x-8 px-0 hover:px-2 transition-all duration-300 "
+                className="border rounded-full border-x-[#C8FFD4] border-x-8 px-0   "
                 src="https://iiit-placement-website-v2.vercel.app/tpcell/registrar.jpeg"
                 // style={{borderRadius: "50%"}}
                 alt="director"

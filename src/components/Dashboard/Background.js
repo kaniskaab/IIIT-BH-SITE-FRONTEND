@@ -3,7 +3,7 @@ import video from '../../img/drone-vid.mp4';
 
 const VideoComponent = () => {
   return (
-    <div className="h-screen w-1/2">
+    <div className="h-screen w-1/2 hidden md:block">
       <video className="h-screen w-full object-cover" autoPlay muted loop>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
@@ -13,5 +13,3 @@ const VideoComponent = () => {
 };
 
 export default VideoComponent;
-
-
