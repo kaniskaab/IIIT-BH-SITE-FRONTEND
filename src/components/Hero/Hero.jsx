@@ -41,7 +41,7 @@ function Hero() {
           <div className="flex lg:pl-32 sm:pl-28 pl-8  lg:pt-72 md:pt-48 pt-32 ">
             <div className="flex flex-col justify-center items-center ">
               <div className="w-5 h-5 rounded-full bg-[#FF8A00]" />
-              <div className="w-1 sm:h-80 h-40 orange-gradient" />
+              <div className="w-1 sm:h-52 h-40 orange-gradient" />
             </div>
             <div className="font-mono pl-4">
               <h className="  font-bold lg:text-7xl md:text-5xl text-4xl">

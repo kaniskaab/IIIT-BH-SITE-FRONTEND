@@ -1,3 +1,7 @@
 .custom-img {
-    background-image: url("../../img/bg-parallex.jpg");
-  }
+  background-image: url('../../img/bg-parallex.jpg');
+  overflow-x: hidden;
+}
+.ddd {
+  overflow-x: hidden;
+}
