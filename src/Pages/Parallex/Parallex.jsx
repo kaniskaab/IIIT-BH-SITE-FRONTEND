@@ -6,6 +6,7 @@ import './styles.css';
 import { PlacementStats } from '../../components/PlacementStats/PlacementStats';
 import Research from '../../components/ResearchStats/Research';
 import Stats from '../../components/Stats/Stats';
+import Dashboard from '../../components/Dashboard/Dashboard';
 
 const about = `IIIT Bhubaneswar owes its origins to the initiative of the
 Government Odisha. It is a result of the desire of the
@@ -56,6 +57,9 @@ export const Parallex = (props) => {
       </header>
       <div class="">
         <p class="mb-4">
+          <div>
+          <Dashboard/>
+          </div>
           <div className="w-screen flex">
             <div className="md:5/12 lg:w-5/12">
               <img

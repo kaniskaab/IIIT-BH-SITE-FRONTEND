@@ -10,14 +10,17 @@ const Dashboard = () => {
   const [selectedTab, setSelectedTab] = useState('notices');
 
   return (
+    <>
+          <h1 className='text-4xl font-poppins font-bold flex w-full justify-center'>Notices, Tenders and Events</h1>
+
     <motion.div
     initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 1.5 }}
-     className="flex w-screen h-screen pt-[150px] rounded-[5px] p-5"
+     className="flex w-screen h-screen rounded-[5px] p-5 mb-10 "
      >
       {/* dashboard */}
-        <div  className="w-1/2 flex flex-col rounded-[5px]">
+        <div  className="w-full md:w-1/2 flex flex-col rounded-[5px]">
       {/* Sidebar */}
       <div className=" bg-[#C8FFD4] flex flex-col rounded-[5px]">
         
@@ -87,7 +90,7 @@ const Dashboard = () => {
       </div>
       {/* element for the background */}
       <Background/>
-    </motion.div>
+    </motion.div></>
   );
 };
 
