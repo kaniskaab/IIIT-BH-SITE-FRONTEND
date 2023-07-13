@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-
 const Card = ({ image, name, batch, branch, testimonial }) => {
   return (
     <motion.div

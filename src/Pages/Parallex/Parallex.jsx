@@ -4,6 +4,8 @@ import Director from '../../components/Director/Director';
 import Hero from '../../components/Hero/Hero';
 import './styles.css';
 import { PlacementStats } from '../../components/PlacementStats/PlacementStats';
+import Research from '../../components/ResearchStats/Research';
+import Stats from '../../components/Stats/Stats';
 
 const about = `IIIT Bhubaneswar owes its origins to the initiative of the
 Government Odisha. It is a result of the desire of the
@@ -47,7 +49,7 @@ export const Parallex = (props) => {
 
   return (
     <div className="ddd">
-      <header class="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img">
+      <header class="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img overflow-hidden">
         <div class=" bg-white bg-opacity-50 rounded-xl h-screen w-screen">
           <Hero />
         </div>
@@ -117,6 +119,7 @@ export const Parallex = (props) => {
         </p>
       </div>
       <PlacementStats/>
+      <Stats/>
     </div>
   );
 };

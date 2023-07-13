@@ -3,6 +3,8 @@
 import { Parallax, Background } from 'react-parallax';
 import image4 from '../../img/placement-bg.jpg'
 import CardView from "./Card";
+import CircularComponent from "../ResearchStats/Research";
+import LogoElement from "../ResearchStats/TopCompanies";
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -28,6 +30,8 @@ export const PlacementStats = () => {
 
   return (
     <div className="">
+          <CircularComponent/>
+
    <Parallax
       bgImage={image4}
       strength={100}
@@ -55,6 +59,7 @@ export const PlacementStats = () => {
 
       </div>
     </Parallax>
+
     </div>
   );
 };

@@ -43,24 +43,21 @@ const Stats = () => {
           <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:my-10 sm:gap-x-8 md:grid-cols-3">
             <div>
               <h3 className="font-bold text-7xl">
-                <span className="animate-numbers" id="number-animate">15</span>+
+                <span className="animate-numbers" id="number-animate">143</span>+
               </h3>
-              <p className="text-2xl mt-4 font-medium">Years in business</p>
-              <p className="text-xl mt-0.5">Creating the successful path</p>
+              <p className="text-2xl mt-4 font-medium">Research Articles</p>
             </div>
 
             <div>
               <h3 className="font-bold text-7xl">
-              <span className="animate-numbers">6</span>+</h3>
-              <p className="text-2xl mt-4 font-medium">Projects delivered</p>
-              <p className="text-xl mt-0.5">In last 6 years</p>
+              <span className="animate-numbers">30</span>+</h3>
+              <p className="text-2xl mt-4 font-medium">Funded Projects</p>
             </div>
 
             <div>
               <h3 className="font-bold text-7xl">
-              <span className="animate-numbers">150</span>+</h3>
-              <p className="text-2xl mt-4 font-medium">Team members</p>
-              <p className="text-xl mt-0.5">Working for your success</p>
+              <span className="animate-numbers">13</span>+</h3>
+              <p className="text-2xl mt-4 font-medium">Research Scholars</p>
             </div>
           </div>
         </div>
