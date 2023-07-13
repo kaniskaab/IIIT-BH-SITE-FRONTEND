@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Tender 1",
+      "referenceNumber": "TDR1234",
+      "printMedia": "Newspaper",
+      "websitePublicationDate": "2023-07-10",
+      "submissionLastDate": "2023-07-15",
+      "openingBidsDate": "2023-07-20",
+      "openingFinancialBidsDate": "2023-07-25",
+      "note": "Important note for Tender 1",
+      "tenderDocumentLink": "https://example.com/tender1.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Tender 2",
+      "referenceNumber": "TDR5678",
+      "printMedia": "Magazine",
+      "websitePublicationDate": "2023-07-11",
+      "submissionLastDate": "2023-07-16",
+      "openingBidsDate": "2023-07-21",
+      "openingFinancialBidsDate": "2023-07-26",
+      "note": "",
+      "tenderDocumentLink": "https://example.com/tender2.pdf"
+    },
+    {
+      "id": 3,
+      "name": "Tender 3",
+      "referenceNumber": "TDR9012",
+      "printMedia": "Online Portal",
+      "websitePublicationDate": "2023-07-12",
+      "submissionLastDate": "2023-07-17",
+      "openingBidsDate": "2023-07-22",
+      "openingFinancialBidsDate": "2023-07-27",
+      "note": "Note for Tender 3",
+      "tenderDocumentLink": "https://example.com/tender3.pdf"
+    }
+  ]
+  

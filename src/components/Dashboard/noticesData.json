@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Important Notice 1",
+      "date": "2023-07-10",
+      "postedBy": "Admin",
+      "content": "This is the content of notice 1.",
+      "attachment": "notice1.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Important Notice 2",
+      "date": "2023-07-11",
+      "postedBy": "Admin",
+      "content": "This is the content of notice 2.",
+      "attachment": null
+    },
+    {
+      "id": 3,
+      "title": "Important Notice 3",
+      "date": "2023-07-12",
+      "postedBy": "Admin",
+      "content": "This is the content of notice 3.",
+      "attachment": "notice3.pdf"
+    }
+  ]
+  
