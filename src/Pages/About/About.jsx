@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Director from '../../components/Director/Director';
 import bgImg from '../../img/bg-parallex.jpg';
+import { textVariant } from '../../utils/motion';
 
 const about = `IIIT Bhubaneswar owes its origins to the initiative of the
 Government Odisha. It is a result of the desire of the
@@ -46,17 +47,25 @@ const About = (props) => {
 
   return (
     <div>
-      <div className="py-16 bg-white">
+      <div className="py-16 bg-white pt-48">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 flex flex-col md:flex-row md:gap-6 items-center md-items-start lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
-              <img
-                className="h-[30vh] w-[70vw] md:w-[50vw] object-cover rounded-full "
-                src={bgImg}
-                alt="director"
-                width={props.truncate ? '' : ''}
-                // height=""
-              />
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <img
+                  className="h-[30vh] w-[70vw] md:w-[50vw] object-cover rounded-full "
+                  src={bgImg}
+                  alt="director"
+                  width={props.truncate ? '' : ''}
+                  // height=""
+                />
+              </motion.div>
+
               {props.truncate ? (
                 <></>
               ) : (
@@ -182,13 +191,28 @@ const About = (props) => {
               )}
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="text-center sm:text-start text-2xl text-gray-900 font-bold md:text-4xl">
-                About IIIT-Bh
-              </h2>
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <h2 className="text-center sm:text-start text-2xl text-gray-900 font-bold md:text-4xl">
+                  About IIIT-Bh
+                </h2>
+              </motion.div>
+
               <p className="mt-6 text-gray-600">
                 {props.truncate ? (
                   <>
-                    {truncateString(about, 645)}
+                    <motion.div
+                      variants={textVariant(0.5)}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.25 }}
+                    >
+                      {truncateString(about, 645)}
+                    </motion.div>
                     <br />
                     <a
                       href="/about"

@@ -68,7 +68,7 @@ const Dashboard = () => {
           </div>
 
           {/* Content */}
-          <div className=" bg-white h-screen p-4 overflow-y-scroll">
+          <div className=" bg-white h-screen p-4 overflow-y-scroll custom-scrollbar">
             {selectedTab === 'notices' && (
               <motion.div
                 initial={{ opacity: 0, y: -20 }}

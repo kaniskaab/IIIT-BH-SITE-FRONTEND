@@ -13,6 +13,7 @@
     width: 100vw;
     left: unset;
     transform: unset;
+    pointer-events: none;
   }
 
   .topShadow {

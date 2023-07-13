@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import EasePack from 'gsap/EasePack';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useEffect, useRef } from 'react';
+import { textVariant } from '../../utils/motion';
 
 const Director = (props) => {
   gsap.registerPlugin(ScrollTrigger);
@@ -51,18 +53,33 @@ const Director = (props) => {
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12 pb-12">
-              <img
-                className=" border-b-2 border-[#cdf8d7] rounded-full bg-gradient-to-b from-[#ffffff25]   to-[#b7ecc335]"
-                src="https://iiit-placement-website-v2.vercel.app/tpcell/director.png"
-                alt="director"
-                width=""
-                height=""
-              />
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <img
+                  className=" border-b-2 border-[#cdf8d7] rounded-full bg-gradient-to-b from-[#ffffff25]   to-[#b7ecc335]"
+                  src="https://iiit-placement-website-v2.vercel.app/tpcell/director.png"
+                  alt="director"
+                  width=""
+                  height=""
+                />
+              </motion.div>
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="text-2xl text-gray-900 font-bold font-mono md:text-4xl sm:text-left text-center ">
-                Director's Message
-              </h2>
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <h2 className="text-2xl text-gray-900 font-bold font-mono md:text-4xl sm:text-left text-center ">
+                  Director's Message
+                </h2>
+              </motion.div>
+
               <p
                 ref={msgRef1}
                 className="mt-6 text-gray-600 sm:text-left text-center"
@@ -116,19 +133,33 @@ const Director = (props) => {
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6 mt-32">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12 ">
-              <img
-                className="border rounded-full border-x-[#C8FFD4] border-x-8 px-0   "
-                src="https://iiit-placement-website-v2.vercel.app/tpcell/registrar.jpeg"
-                // style={{borderRadius: "50%"}}
-                alt="director"
-                width=""
-                height=""
-              />
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <img
+                  className="border rounded-full border-x-[#C8FFD4] border-x-8 px-0   "
+                  src="https://iiit-placement-website-v2.vercel.app/tpcell/registrar.jpeg"
+                  // style={{borderRadius: "50%"}}
+                  alt="director"
+                  width=""
+                  height=""
+                />
+              </motion.div>
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="mt-10 text-2xl text-gray-900 font-mono font-bold md:text-4xl sm:text-left text-center">
-                Registrar's Message
-              </h2>
+              <motion.div
+                variants={textVariant(0.5)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <h2 className="mt-10 text-2xl text-gray-900 font-mono font-bold md:text-4xl sm:text-left text-center">
+                  Registrar's Message
+                </h2>
+              </motion.div>
               <p
                 ref={msgRef}
                 className="mt-6 text-gray-600 sm:text-left text-center"

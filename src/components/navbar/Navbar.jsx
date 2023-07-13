@@ -145,7 +145,12 @@ export default function Navbar(props) {
   if (mobile)
     return (
       <>
-        <nav className={classesM.navMobile}>
+        <nav
+          className={classesM.navMobile}
+          style={{
+            pointerEvents: menuOpen ? 'auto' : 'none',
+          }}
+        >
           <div
             className={classesM.scrolledBg}
             style={{
@@ -169,6 +174,7 @@ export default function Navbar(props) {
                 style={{
                   opacity: menuOpen ? 0 : 1,
                   rotate: menuOpen ? '90deg' : '0deg',
+                  pointerEvents: 'auto',
                 }}
               />
               <FaTimes
@@ -176,6 +182,7 @@ export default function Navbar(props) {
                 style={{
                   opacity: menuOpen ? 1 : 0,
                   rotate: menuOpen ? '90deg' : '0deg',
+                  pointerEvents: 'auto',
                 }}
               />
             </div>
@@ -186,6 +193,9 @@ export default function Navbar(props) {
           style={{
             opacity: menuOpen ? 1 : 0,
             transform: menuOpen ? 'translateX(0)' : 'translateX(500px)',
+            // pointerEvents: menuOpen ? 'auto' : 'none',
+            zIndex: menuOpen ? 1000 : -1000,
+            pointerEvents: 'auto',
           }}
         >
           {menuData.map((item) => (
@@ -195,6 +205,8 @@ export default function Navbar(props) {
                 {item.submenu ? (
                   <FaAngleDown
                     style={{
+                      pointerEvents: 'auto',
+
                       rotate: openItem === item.name ? '180deg' : '0deg',
                       transform:
                         openItem === item.name
@@ -217,6 +229,7 @@ export default function Navbar(props) {
                     maxHeight:
                       openItem === item.name ? `${totalHt(item) * 4}rem` : 0,
                     overflow: 'hidden',
+                    pointerEvents: 'auto',
                   }}
                 >
                   {item.sublinks.map((subitem) => (
@@ -226,6 +239,8 @@ export default function Navbar(props) {
                         {subitem.submenu ? (
                           <FaAngleDown
                             style={{
+                              pointerEvents: 'auto',
+
                               rotate:
                                 openSubItem === subitem.name
                                   ? '180deg'
@@ -253,6 +268,7 @@ export default function Navbar(props) {
                                 ? `${subitem.sublinks.length * 4}rem`
                                 : 0,
                             overflow: 'hidden',
+                            pointerEvents: 'auto',
                           }}
                         >
                           {subitem.sublinks.map((ssitem) => (
