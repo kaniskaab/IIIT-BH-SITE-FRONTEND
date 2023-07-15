@@ -1,12 +1,14 @@
 import classNames from 'classnames';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 import Circle from '../../svg/Circle';
 import LogoElement from './TopCompanies';
+import { Context } from '../../context/ContextProvider';
 const CircularComponent = () => {
   const { y } = useWindowScroll();
   const [rotation, setRotation] = useState(0);
-
+  const {placement}=useContext(Context);
+  console.log(placement)
   useEffect(() => {
     const handleScroll = () => {
       const rotationValue = y / 2; // Adjust the scroll speed here
@@ -20,14 +22,14 @@ const CircularComponent = () => {
   }, [y]);
 
   return (
-    <div className="overflow-scroll-hidden h-screen mb-[150px] w-screen flex flex-col items-center">
+    <div className="overflow-scroll-hidden mb-[150px] w-screen flex flex-col items-center">
       <div className="text-[40px] font-poppins font-semibold leading-[40px]">
         Placement Stats
       </div>
-      <div className="text-[20px] leading-[40px]">300+ students placed</div>
+      <div className="text-[20px] leading-[40px]">{placement.numOfStudentsPlaced}+ students placed</div>
       <div className="text-[20px] leading-[40px]">
         {' '}
-        20+ recruiters On Campus
+        {placement.numOfRecruiters}+ recruiters On Campus
       </div>
 
       <div
@@ -44,10 +46,8 @@ const CircularComponent = () => {
         </div>
       </div>
       <div className="text-[40px] font-bold -mt-[280px] h-30 w-[200px] flex justify-center items-center text-center">
-        98% placement rate!
-      </div>
-      <LogoElement />
-    </div>
+        {placement.placementPercentage}% placement rate!
+      </div>    </div>
   );
 };
 

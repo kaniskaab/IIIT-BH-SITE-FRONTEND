@@ -1,5 +1,6 @@
 import React from 'react';
 import CircularComponent from '../ResearchStats/Research';
+import LogoElement from '../ResearchStats/TopCompanies';
 const styles = {
   fontFamily: 'sans-serif',
   textAlign: 'center',
@@ -22,8 +23,13 @@ const image3 =
 //     "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
 export const PlacementStats = () => {
   return (
-    <div className=" mt-32">
-      <CircularComponent />
+    <div className="mt-5">
+      <div className='h-auto -mb-[100px]'>
+          <CircularComponent />
+      </div>
+      <div className='h-auto'>
+        <LogoElement/>
+      </div>
 
       {/* <Parallax
         bgImage={image4}

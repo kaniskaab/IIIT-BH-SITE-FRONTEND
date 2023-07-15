@@ -1,8 +1,11 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { Context } from '../../context/ContextProvider';
 
 const Stats = () => {
+  const {research}=useContext(Context)
+  console.log(research)
   const animateText = (elt) => {
     var endNbr = Number(elt.innerHTML);
     incNbrRec(0, endNbr, elt);
@@ -39,14 +42,14 @@ const Stats = () => {
     <div>
       <section className="py-10 bg-gray-100 sm:py-16 lg:py-10 custom-bg">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="text-3xl sm:text-5xl font-poppins font-semibold mx-2 flex justify-center ">
+          <div className="text-3xl sm:text-5xl font-poppins font-semibold mx-2 flex justify-center mt-[100px]">
             Research Highlights
           </div>
           <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:my-10 sm:gap-x-8 md:grid-cols-3">
             <div>
               <h3 className="font-bold text-7xl">
                 <span className="animate-numbers" id="number-animate">
-                  143
+                  {research.researchArticles}
                 </span>
                 +
               </h3>
@@ -55,14 +58,14 @@ const Stats = () => {
 
             <div>
               <h3 className="font-bold text-7xl">
-                <span className="animate-numbers">30</span>+
+                <span className="animate-numbers">{research.fundedProjects}</span>+
               </h3>
               <p className="text-2xl mt-4 font-medium">Funded Projects</p>
             </div>
 
             <div>
               <h3 className="font-bold text-7xl">
-                <span className="animate-numbers">13</span>+
+                <span className="animate-numbers">{research.numResearchScholars}</span>+
               </h3>
               <p className="text-2xl mt-4 font-medium">Research Scholars</p>
             </div>

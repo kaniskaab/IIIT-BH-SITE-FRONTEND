@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <h1 className="text-2xl md:text-4xl font-poppins font-bold flex w-full justify-center overflow-x-hidden mt-8">
+      <h1 className="text-2xl md:text-4xl font-poppins font-bold flex w-full justify-center overflow-x-hidden overflow-y-hidden mt-8">
         Notices, Tenders and Events
       </h1>
 
@@ -18,7 +18,7 @@ const Dashboard = () => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col md:flex-row w-screen h-screen rounded-[5px] p-5 mb-10 "
+        className="flex flex-col md:flex-row w-screen h-screen rounded-[5px] p-5 mb-10 overflow-x-hidden"
       >
         {/* dashboard */}
         <div className="w-full md:w-1/2 flex flex-col rounded-[5px] pr-4 ">
