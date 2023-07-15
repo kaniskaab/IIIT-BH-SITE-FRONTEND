@@ -15,9 +15,9 @@ function App() {
         <Route path="/:any" element={<Header common />} />
       </Routes>
       <Routes>
-        <Route exact path="/test" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About truncate={false} />} />
-        <Route exact path="/" element={<Parallex />} />
+        <Route exact path="/test" element={<Parallex />} />
         <Route
           exact
           path="/directors_message"
