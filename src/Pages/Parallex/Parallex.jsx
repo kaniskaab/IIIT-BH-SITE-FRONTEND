@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Dashboard from '../../components/Dashboard/Dashboard';
 import Director from '../../components/Director/Director';
+import Feedbacks from '../../components/Feedback/Feedbacks';
 import Hero from '../../components/Hero/Hero';
 import { PlacementStats } from '../../components/PlacementStats/PlacementStats';
 import Stats from '../../components/Stats/Stats';
@@ -115,7 +116,7 @@ export const Parallex = (props) => {
           </div>
         </p>
       </div>
-      <section class="container flex items-center justify-center h-[400px] m-auto mb-12 bg-fixed bg-center bg-cover custom-img"></section>
+      <section class="container flex items-center justify-center h-[400px] rounded-full m-auto mb-12 bg-fixed bg-center bg-cover custom-img "></section>
       <div class="w-screen">
         <p class="">
           <Director />
@@ -123,6 +124,7 @@ export const Parallex = (props) => {
       </div>
       <PlacementStats />
       <Stats />
+      <Feedbacks />
     </div>
   );
 };

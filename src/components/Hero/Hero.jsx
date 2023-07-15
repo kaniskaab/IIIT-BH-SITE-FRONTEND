@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
 import heroImg from '../../img/heroImg.png';
+import sideImg from '../../img/sideImg.png';
 
 function Hero() {
   const scrollRef = useRef();
@@ -16,7 +17,11 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <div className="h-screen   w-[15vw] right-0 bottom-0 absolute bg-[#C8FFD4]"></div>
+          <div className="h-screen   w-[17vw] right-0 bottom-0 absolute bg-[#C8FFD4]"></div>
+          <div
+            className="h-screen   w-[15vw] right-[2vw] bottom-0 absolute bg-cover bg-no-repeat "
+            style={{ backgroundImage: `url(${sideImg})` }}
+          ></div>
         </motion.div>
         <div
           className="w-full cursor-pointer font-mono text-center  h-[2rem] bottom-0 absolute bg-[#E8E8E8]"

@@ -13,10 +13,16 @@ export default function Home() {
     <>
       {' '}
       <div className="overflow-x-hidden">
-        <Hero />
+        <header class="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img overflow-hidden">
+          <div class=" bg-white bg-opacity-50 rounded-xl h-screen w-screen">
+            <Hero />
+          </div>
+        </header>
         <Dashboard />
 
         <About truncate={true} />
+        <section class="container flex items-center justify-center sm:h-[400px] rounded-full m-auto mb-12 bg-fixed bg-center bg-cover custom-img  h-[200px]"></section>
+
         <Director truncate={true} />
         <Stats />
 
