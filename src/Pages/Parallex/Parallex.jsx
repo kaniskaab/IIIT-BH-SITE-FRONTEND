@@ -4,6 +4,7 @@ import Dashboard from '../../components/Dashboard/Dashboard';
 import Director from '../../components/Director/Director';
 import Feedbacks from '../../components/Feedback/Feedbacks';
 import Hero from '../../components/Hero/Hero';
+import IIITACT from '../../components/IIITAct/IIITACT';
 import { PlacementStats } from '../../components/PlacementStats/PlacementStats';
 import Stats from '../../components/Stats/Stats';
 import './styles.css';
@@ -125,6 +126,7 @@ export const Parallex = (props) => {
       <PlacementStats />
       <Stats />
       <Feedbacks />
+      <IIITACT />
     </div>
   );
 };
