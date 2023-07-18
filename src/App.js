@@ -7,6 +7,7 @@ import Director from './components/Director/Director';
 import Footer from './components/Footer/Footer';
 import IIITACT from './components/IIITAct/IIITACT';
 import RTI from './components/RTI/RTI';
+import Resources from './components/Resources/Resources';
 import Scstobccell from './components/Scstobccell/Scstobccell';
 import Header from './components/header/header';
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/iiitstatue" element={<Home />} />
         <Route exact path="/rti" element={<RTI />} />
         <Route exact path="/scstobc-cell" element={<Scstobccell />} />
+        <Route exact path="/resources" element={<Resources />} />
       </Routes>
 
       <Footer />
