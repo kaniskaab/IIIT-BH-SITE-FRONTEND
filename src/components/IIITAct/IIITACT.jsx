@@ -11,14 +11,10 @@ function IIITACT() {
 
   return (
     <div>
-      <div>hey why the fuck is it not renedering</div>
-      <Document file={MyPdf}>
-        <Page pageNumber={1} />
-      </Document>
-      {/* <Pdf /> */}
-      <div className="border-4">
-        <PDFViewer title={title} pdfUrl={pdfUrl} />
-      </div>
+    <div>
+              <iframe src={MyPdf} title="Google Docs PDF" className="pdf-iframe h-screen w-screen" />
+
+    </div>
     </div>
   );
 }
