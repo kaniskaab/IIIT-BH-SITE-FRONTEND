@@ -1,0 +1,14 @@
+li {
+  color: rgb(81, 81, 81);
+  padding-top: 10px;
+}
+
+li ul {
+  padding-left: 20px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+}
+li ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
