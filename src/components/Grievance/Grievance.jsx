@@ -4,8 +4,7 @@ import MyForm from '../../utils/googleForm';
 import ImageBox from '../imageBox';
 
 function Grievance() {
-  const FormUrl =
-    'https://docs.google.com/forms/d/e/1FAIpQLSdhlCAuA-V87HOrrY6DjuFcqmf-RdG7IJY2hEyYWK94rZ3UIA/viewform?usp=sf_link';
+  const FormUrl = 'https://forms.gle/Umrb4vyezaRWrmDc9';
   const HeroTxt = 'Online Grievance Redressal';
 
   const para = '';

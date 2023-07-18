@@ -3,11 +3,11 @@ import React from 'react';
 import buildingImg from '../../img/buildingsIIIT2.png';
 import ImageBox from '../imageBox';
 
-function IIITACT() {
-  const pdfUrl =
-    'https://drive.google.com/file/d/1_8EQ7sr0zvG744eXMgzX0fNkO2MHXqaB/preview';
+function BOG() {
+  const docUrl =
+    'https://docs.google.com/document/d/1K_OHN8poNrYbb3HJHo0vbGQkz7dJsBRz/preview';
   const title = 'Google Docs PDF';
-  const HeroTxt = 'IIIT ACT';
+  const HeroTxt = 'BOG';
   const para = '';
 
   return (
@@ -17,7 +17,8 @@ function IIITACT() {
           <ImageBox HeadTxt={HeroTxt} paraTxt={para} bgImg={buildingImg} />
           <div className="flex  justify-center items-center mb-4">
             <iframe
-              src={pdfUrl}
+              src={docUrl}
+              target="_blank"
               title="Google Docs PDF"
               className="pdf-iframe h-[80vh] w-[80vw]"
               height="100px"
@@ -29,4 +30,4 @@ function IIITACT() {
   );
 }
 
-export default IIITACT;
+export default BOG;

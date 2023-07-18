@@ -3,11 +3,11 @@ import React from 'react';
 import buildingImg from '../../img/buildingsIIIT2.png';
 import ImageBox from '../imageBox';
 
-function IIITACT() {
+function IIITStatue() {
   const pdfUrl =
-    'https://drive.google.com/file/d/1_8EQ7sr0zvG744eXMgzX0fNkO2MHXqaB/preview';
+    'https://drive.google.com/file/d/1R1puasIuevzv-S8T92oE1V_m2kW5DZxz/preview';
   const title = 'Google Docs PDF';
-  const HeroTxt = 'IIIT ACT';
+  const HeroTxt = 'IIIT Statute';
   const para = '';
 
   return (
@@ -29,4 +29,4 @@ function IIITACT() {
   );
 }
 
-export default IIITACT;
+export default IIITStatue;
