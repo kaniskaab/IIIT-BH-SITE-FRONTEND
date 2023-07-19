@@ -5,6 +5,7 @@ import Home from './Pages/Home/home';
 import { Parallex } from './Pages/Parallex/Parallex';
 import BOG from './components/BOG/BOG';
 import Director from './components/Director/Director';
+import FeedbackFacilityForStudent from './components/FeedbackFacilityForStudent/FeedbackFacilityForStudent';
 import Footer from './components/Footer/Footer';
 import Grievance from './components/Grievance/Grievance';
 import IIITACT from './components/IIITAct/IIITACT';
@@ -43,6 +44,11 @@ function App() {
           exact
           path="/online-grievance-redressal"
           element={<Grievance />}
+        />
+        <Route
+          exact
+          path="/feedbackstudent"
+          element={<FeedbackFacilityForStudent />}
         />
       </Routes>
 
