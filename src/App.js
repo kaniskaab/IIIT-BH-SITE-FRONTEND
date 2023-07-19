@@ -3,6 +3,8 @@ import './App.css';
 import About from './Pages/About/About';
 import Home from './Pages/Home/home';
 import { Parallex } from './Pages/Parallex/Parallex';
+import AICTE from './components/AICTE/AICTE';
+import IIITADMISSION from './components/Admission/IIITAdmission';
 import BOG from './components/BOG/BOG';
 import Director from './components/Director/Director';
 import FeedbackFacilityForStudent from './components/FeedbackFacilityForStudent/FeedbackFacilityForStudent';
@@ -10,11 +12,11 @@ import Footer from './components/Footer/Footer';
 import Grievance from './components/Grievance/Grievance';
 import IIITACT from './components/IIITAct/IIITACT';
 import IIITStatue from './components/IIITStatue/IIITStatue';
+import NIRF from './components/NIRF/NIRF';
 import RTI from './components/RTI/RTI';
 import Resources from './components/Resources/Resources';
 import Scstobccell from './components/Scstobccell/Scstobccell';
 import Header from './components/header/header';
-import IIITADMISSION from './components/Admission/IIITAdmission';
 function App() {
   return (
     <>
@@ -53,6 +55,9 @@ function App() {
           path="/feedbackstudent"
           element={<FeedbackFacilityForStudent />}
         />
+
+        <Route exact path="/nirf" element={<NIRF />} />
+        <Route exact path="/aicte" element={<AICTE />} />
       </Routes>
 
       <Footer />
