@@ -36,28 +36,25 @@ function App() {
           path="/directors_message"
           element={<Director truncate={false} />}
         />
+        <Route path="/university" element={<Parallex />}>
+          <Route path="/iiitact" element={<IIITACT />} />
+          <Route path="/iiitstatue" element={<IIITStatue />} />
+          <Route path="/bog" element={<BOG />} />
+          <Route path="/rti" element={<RTI />} />
+          <Route path="/scstobc-cell" element={<Scstobccell />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/admission" element={<IIITADMISSION />} />
 
-        <Route exact path="/iiitact" element={<IIITACT />} />
-        <Route exact path="/iiitstatue" element={<IIITStatue />} />
-        <Route exact path="/bog" element={<BOG />} />
-        <Route exact path="/rti" element={<RTI />} />
-        <Route exact path="/scstobc-cell" element={<Scstobccell />} />
-        <Route exact path="/resources" element={<Resources />} />
-        <Route exact path="/admission" element={<IIITADMISSION />} />
+          <Route path="/online-grievance-redressal" element={<Grievance />} />
+          <Route
+            exact
+            path="/feedbackstudent"
+            element={<FeedbackFacilityForStudent />}
+          />
 
-        <Route
-          exact
-          path="/online-grievance-redressal"
-          element={<Grievance />}
-        />
-        <Route
-          exact
-          path="/feedbackstudent"
-          element={<FeedbackFacilityForStudent />}
-        />
-
-        <Route exact path="/nirf" element={<NIRF />} />
-        <Route exact path="/aicte" element={<AICTE />} />
+          <Route exact path="/nirf" element={<NIRF />} />
+          <Route exact path="/aicte" element={<AICTE />} />
+        </Route>
       </Routes>
 
       <Footer />
