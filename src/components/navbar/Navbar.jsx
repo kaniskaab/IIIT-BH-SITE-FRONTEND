@@ -85,7 +85,7 @@ const menuData = [
       { name: 'Humanities', submenu: false, link: '/' },
     ],
   },
-  { name: 'Admission', submenu: false, link: '' },
+  { name: 'Admission', submenu: false, link: '/admission' },
   { name: 'Placement', submenu: false, link: '' },
   {
     name: 'More',
