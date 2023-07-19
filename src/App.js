@@ -36,25 +36,33 @@ function App() {
           path="/directors_message"
           element={<Director truncate={false} />}
         />
-        <Route path="/university" element={<Parallex />}>
-          <Route path="/iiitact" element={<IIITACT />} />
-          <Route path="/iiitstatue" element={<IIITStatue />} />
-          <Route path="/bog" element={<BOG />} />
-          <Route path="/rti" element={<RTI />} />
-          <Route path="/scstobc-cell" element={<Scstobccell />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/admission" element={<IIITADMISSION />} />
+        <Route exact path="/university" element={<Home />} />
 
-          <Route path="/online-grievance-redressal" element={<Grievance />} />
-          <Route
-            exact
-            path="/feedbackstudent"
-            element={<FeedbackFacilityForStudent />}
-          />
+        <Route exact path="/university/iiitact" element={<IIITACT />} />
+        <Route exact path="/university/iiitstatue" element={<IIITStatue />} />
+        <Route exact path="/university/bog" element={<BOG />} />
+        <Route exact path="/university/rti" element={<RTI />} />
+        <Route
+          exact
+          path="/university/scstobc-cell"
+          element={<Scstobccell />}
+        />
+        <Route exact path="/university/resources" element={<Resources />} />
+        <Route exact path="/university/admission" element={<IIITADMISSION />} />
 
-          <Route exact path="/nirf" element={<NIRF />} />
-          <Route exact path="/aicte" element={<AICTE />} />
-        </Route>
+        <Route
+          exact
+          path="/university/online-grievance-redressal"
+          element={<Grievance />}
+        />
+        <Route
+          exact
+          path="/university/feedbackstudent"
+          element={<FeedbackFacilityForStudent />}
+        />
+
+        <Route exact path="/university/nirf" element={<NIRF />} />
+        <Route exact path="/university/aicte" element={<AICTE />} />
       </Routes>
 
       <Footer />
