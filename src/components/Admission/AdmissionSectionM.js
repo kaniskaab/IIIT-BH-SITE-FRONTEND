@@ -29,7 +29,7 @@ const AdmissionSectionM = ({ type }) => {
   const btechResources = resources.filter((resource) => resource.type === 'MTECH');
 
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center text-white font-poppins overflow-y-scroll" id="mtech">
+    <div className="md:h-screen w-full flex flex-col items-center justify-center text-white font-poppins overflow-y-scroll" id="mtech">
                 <h1 className='text-3xl w-full text-center bg-black/60 p-5'>M.Tech Admission</h1>
 
       <motion.h1
@@ -43,7 +43,7 @@ const AdmissionSectionM = ({ type }) => {
 
       <div className="flex flex-col md:flex-row justify-center mt-8 w-full h-full">
         <motion.div
-          className="md:w-1/2 w-full p-4 m-2 shadow-xl border rounded-lg flex flex-col"
+          className="md:w-1/2 w-full p-4 m-2 shadow-xl border rounded-lg flex flex-col bg-white"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -64,7 +64,7 @@ const AdmissionSectionM = ({ type }) => {
         </motion.div>
 
         <motion.div
-          className="md:w-1/2 w-full p-4 m-2 shadow-xl border rounded-lg"
+          className="md:w-1/2 w-full p-4 m-2 shadow-xl border rounded-lg bg-white"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}

@@ -17,13 +17,16 @@ function IIITADMISSION() {
     <div>
       <div className="md:pt-48 pt-28">
         <div className="flex flex-col items-center justify-center">
-          <ImageBox HeadTxt={HeroTxt} paraTxt={para} bgImg={buildingImg} />
-          <div className="flex flex-col justify-center items-center mb-4">
-            <Admission/>
+          <ImageBox HeadTxt={HeroTxt} paraTxt={para} bgImg={buildingImg}/>
+          <div className="flex flex-col justify-center items-center mb-4 w-screen overflow-x-clip bg-gray-400/60">
+            <div className='w-4/5'>
+                 <Admission/>
             <AdmissionSection/>
             <AdmissionSectionM/>
             <AdmissionSectionP/>
-            <Nav/>
+            <Nav/> 
+            </div>
+          
           </div>
         </div>
       </div>
