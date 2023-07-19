@@ -13,6 +13,7 @@ import RTI from './components/RTI/RTI';
 import Resources from './components/Resources/Resources';
 import Scstobccell from './components/Scstobccell/Scstobccell';
 import Header from './components/header/header';
+import IIITADMISSION from './components/Admission/IIITAdmission';
 function App() {
   return (
     <>
@@ -39,6 +40,8 @@ function App() {
         <Route exact path="/rti" element={<RTI />} />
         <Route exact path="/scstobc-cell" element={<Scstobccell />} />
         <Route exact path="/resources" element={<Resources />} />
+        <Route exact path="/admission" element={<IIITADMISSION />} />
+
         <Route
           exact
           path="/online-grievance-redressal"
