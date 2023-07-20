@@ -80,7 +80,7 @@ const menuData = [
     submenu: true,
     link: '',
     sublinks: [
-      { name: 'Regulation', submenu: false, link: '/' },
+      { name: 'Regulation', submenu: false, link: '/academics/regulation' },
       { name: 'Cirriculum', submenu: false, link: '/' },
       {
         name: 'Research',

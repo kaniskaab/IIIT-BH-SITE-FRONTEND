@@ -14,6 +14,7 @@ import IIITACT from './components/IIITAct/IIITACT';
 import IIITStatue from './components/IIITStatue/IIITStatue';
 import NIRF from './components/NIRF/NIRF';
 import RTI from './components/RTI/RTI';
+import Regulations from './components/Regulations/Regulations';
 import Resources from './components/Resources/Resources';
 import Scstobccell from './components/Scstobccell/Scstobccell';
 import Header from './components/header/header';
@@ -63,6 +64,8 @@ function App() {
 
         <Route exact path="/university/nirf" element={<NIRF />} />
         <Route exact path="/university/aicte" element={<AICTE />} />
+
+        <Route exact path="/academics/regulation" element={<Regulations />} />
       </Routes>
 
       <Footer />
