@@ -24,7 +24,7 @@ function Regulations() {
 
             <a href={BtechReg} target="_blank" className="">
               <div className="py-8 text-sm text-center justify-center flex items-center gap-4">
-                <div className="bg-gradient-to-r hover:bg-gradient-to-l from-white to-orange-000 p-2 rounded-full px-4">
+                <div className="bg-gradient-to-r hover:bg-gradient-to-l from-white to-orange-000 p-2 rounded-xl px-4">
                   Regulations
                 </div>
                 <div className="text-gray-800 animationArr">

@@ -6,6 +6,7 @@ import { Parallex } from './Pages/Parallex/Parallex';
 import AICTE from './components/AICTE/AICTE';
 import IIITADMISSION from './components/Admission/IIITAdmission';
 import BOG from './components/BOG/BOG';
+import Calander from './components/Calander/Calander';
 import Director from './components/Director/Director';
 import FeedbackFacilityForStudent from './components/FeedbackFacilityForStudent/FeedbackFacilityForStudent';
 import Footer from './components/Footer/Footer';
@@ -66,6 +67,7 @@ function App() {
         <Route exact path="/university/aicte" element={<AICTE />} />
 
         <Route exact path="/academics/regulation" element={<Regulations />} />
+        <Route exact path="/academics/calendar" element={<Calander />} />
       </Routes>
 
       <Footer />
