@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 // import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
+// import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from 'react-icons/bs';
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from 'react-icons/md';
+import styles from './index.module.css';
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -23,23 +24,31 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <BsFillArrowLeftCircleFill
-        className="left-arrow text-gray-800 opacity-25"
+    <section className={styles.slider}>
+      <div className="text-6xl font-bold absolute text-white z-30 pointer-events-none text-center ">
+        {' '}
+        Computer Science &Engineering
+      </div>
+      <MdOutlineKeyboardArrowLeft
+        className={`${styles.leftArrow} text-white bg-gray-700  rounded-full  opacity-25 hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
         onClick={prevSlide}
       />
-      <BsFillArrowRightCircleFill
-        className="right-arrow  text-gray-800 opacity-25"
+      <MdOutlineKeyboardArrowRight
+        className={`${styles.rightArrow} text-white bg-gray-700  rounded-full  opacity-25 hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
         onClick={nextSlide}
       />
       {slides.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className={
+              index === current
+                ? `${styles.slide} ${styles.active}`
+                : styles.slide
+            }
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="cse pic" className="image" />
+              <img src={slide.image} alt="cse pic" className={styles.image} />
             )}
           </div>
         );

@@ -6,8 +6,10 @@ import { SliderData } from '../imageCrousel/sliderData';
 function CSE() {
   return (
     <>
-      <div className="p-16"></div>
-      <ImageSlider slides={SliderData} />;
+      <div className="lg:p-[86px] sm:p-14 p-12"></div>
+      <div className="flex flex-col justify-center items-center">
+        <ImageSlider slides={SliderData} />;
+      </div>
     </>
   );
 }
