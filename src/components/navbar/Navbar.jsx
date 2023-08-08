@@ -81,6 +81,11 @@ const menuData = [
     link: '',
     sublinks: [
       { name: 'Regulation', submenu: false, link: '/academics/regulation' },
+      {
+        name: 'Academic Calendar',
+        submenu: false,
+        link: '/academics/calendar',
+      },
       { name: 'Cirriculum', submenu: false, link: '/' },
       {
         name: 'Research',

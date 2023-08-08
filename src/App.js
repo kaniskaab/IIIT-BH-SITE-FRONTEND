@@ -7,6 +7,7 @@ import AICTE from './components/AICTE/AICTE';
 import IIITADMISSION from './components/Admission/IIITAdmission';
 import BOG from './components/BOG/BOG';
 import Calander from './components/Calander/Calander';
+import CSE from './components/DeptCSE/CSE';
 import Director from './components/Director/Director';
 import FeedbackFacilityForStudent from './components/FeedbackFacilityForStudent/FeedbackFacilityForStudent';
 import Footer from './components/Footer/Footer';
@@ -68,6 +69,7 @@ function App() {
 
         <Route exact path="/academics/regulation" element={<Regulations />} />
         <Route exact path="/academics/calendar" element={<Calander />} />
+        <Route exact path="/cse" element={<CSE />} />
       </Routes>
 
       <Footer />

@@ -17,7 +17,10 @@ function Regulations() {
       <div className="flex flex-col items-center justify-center">
         <ImageBox HeadTxt={HeroTxt} paraTxt={para} bgImg={buildingImg} />
         <div className="flex flex-col md:flex-row justify-around w-[80vw] p-8 gap-4  ">
-          <div className="flex flex-col justify-center items-start bg-slate-300 rounded-xl p-16">
+          <div className="flex flex-col justify-center items-start bg-slate-300 rounded-xl p-16 relative">
+            <div className="absolute top-0 left-16 text-gray-800 text-7xl ">
+              ...
+            </div>
             <div className="text-5xl font-bold text-gray-800  pt-8 border-b-2 border-gray-100 pb-4">
               BTech
             </div>
@@ -27,13 +30,16 @@ function Regulations() {
                 <div className="bg-gradient-to-r hover:bg-gradient-to-l from-white to-orange-000 p-2 rounded-xl px-4">
                   Regulations
                 </div>
-                <div className="text-gray-800 animationArr">
+                <div className="text-gray-800 animationArr ">
                   <FaAngleDoubleRight />
                 </div>
               </div>
             </a>
           </div>
-          <div className="flex flex-col justify-center items-start rounded-xl p-16  bg-slate-300 ">
+          <div className="flex flex-col justify-center items-start rounded-xl p-16 relative bg-slate-300 ">
+            <div className="absolute top-0 left-16 text-gray-800 text-7xl ">
+              ...
+            </div>
             <div className="text-5xl font-bold text-gray-800  pt-8 border-b-2 pb-4">
               Mtech
             </div>
@@ -50,7 +56,10 @@ function Regulations() {
               </div>
             </a>
           </div>
-          <div className="flex flex-col justify-center md:items-center items-start bg-slate-300 rounded-xl p-16">
+          <div className="flex flex-col justify-center md:items-center items-start bg-slate-300 relative rounded-xl p-16">
+            <div className="absolute top-0 left-16 text-gray-800 text-7xl ">
+              ...
+            </div>
             <div className="text-5xl font-bold text-gray-800  pt-8 border-b-2 border-gray-100 pb-4 text-center">
               PhD
             </div>
