@@ -100,7 +100,7 @@ const menuData = [
     submenu: true,
     link: '',
     sublinks: [
-      { name: 'CS', submenu: false, link: '/' },
+      { name: 'CS', submenu: false, link: '/cse' },
       { name: 'ETC', submenu: false, link: '/' },
       { name: 'EEE', submenu: false, link: '/' },
       { name: 'Basic Sciences', submenu: false, link: '/' },
