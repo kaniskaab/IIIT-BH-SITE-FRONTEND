@@ -7,7 +7,7 @@ import {
 } from 'react-icons/md';
 import styles from './index.module.css';
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ slides, mainTxt }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -25,16 +25,16 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className={styles.slider}>
-      <div className="text-6xl font-bold absolute text-white z-30 pointer-events-none text-center ">
+      <div className="md:text-6xl sm:text-3xl text-3xl font-bold absolute text-white z-30 pointer-events-none text-center ">
         {' '}
-        Computer Science &Engineering
+        {mainTxt}
       </div>
       <MdOutlineKeyboardArrowLeft
-        className={`${styles.leftArrow} text-white bg-gray-700  rounded-full  opacity-25 hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
+        className={`${styles.leftArrow} text-white bg-gray-900  rounded-full  opacity-[.1] hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
         onClick={prevSlide}
       />
       <MdOutlineKeyboardArrowRight
-        className={`${styles.rightArrow} text-white bg-gray-700  rounded-full  opacity-25 hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
+        className={`${styles.rightArrow} text-white bg-gray-900  rounded-full  opacity-[.1] hover:opacity-50 scale-[1.5] hover:scale-[2]  transition-all duration-200`}
         onClick={nextSlide}
       />
       {slides.map((slide, index) => {

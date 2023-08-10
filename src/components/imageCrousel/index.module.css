@@ -9,7 +9,8 @@
 .image {
   width: 100vw;
   height: 500px;
-  border-radius: 10px;
+  /* border-top-left-radius: 150px;
+  border-top-right-radius: 150px; */
   object-fit: cover;
   filter: brightness(0.3);
 }
