@@ -1,6 +1,8 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import myImg from '../../img/DrAnjMishra.png'; // Import the image
+import { fadeIn, textVariant } from '../../utils/motion';
 import Accordion from '../Accordion/Accordion';
 import ImageSlider from '../imageCrousel/imgCrousel';
 import { SliderData } from '../imageCrousel/sliderData';
@@ -44,26 +46,61 @@ function CSE() {
       <div className="flex flex-col justify-center items-center overflow-x-hidden">
         <ImageSlider slides={SliderData} mainTxt={hod.branch} />;
         <div className="bg-[#637457] w-full text-center text-[#fffffe] sm:p-8 p-4 font-semibold  text-sm sm:text-2xl">
-          Message From Head of the Department
+          <motion.div
+            variants={textVariant(0.5)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+          >
+            Message From Head of the Department
+          </motion.div>
         </div>
         <div className="flex sm:flex-row flex-col sm:gap-12 gap-2">
           <div className="  flex flex-col  sm:w-[25vw] w-[80vw]  mt-8">
-            <img className="rounded-3xl" src={myImg} alt="My Image" />
-            <div className="text-center sm:text-base text-orange-600">
-              <span className="text-3xl text-gray-900">{hod.name}</span>
-              <br />
-              {hod.designation}
-              <br />
-              {hod.branch}
-            </div>
+            <motion.div
+              variants={fadeIn('right', 0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <img className="rounded-3xl" src={myImg} alt="My Image" />
+            </motion.div>
+            <motion.div
+              variants={textVariant(0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <div className="text-center sm:text-base text-orange-600">
+                <span className="text-3xl text-gray-900">{hod.name}</span>
+                <br />
+                {hod.designation}
+                <br />
+                {hod.branch}
+              </div>
+            </motion.div>
           </div>
           <div>
-            <div className="  w-[80vw]  text-center sm:text-left sm:w-[50vw] sm:text-base text-sm mt-8 text">
-              {hod.aboutPara}
-            </div>
-            <div className="   w-[80vw] sm:w-[50vw] mt-2 text-center sm:text-left font-semibold text-base sm:text-xl">
-              {hod.name}
-            </div>
+            <motion.div
+              variants={textVariant(0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <div className="  w-[80vw]  text-center sm:text-left sm:w-[50vw] sm:text-base text-sm mt-8 text">
+                {hod.aboutPara}
+              </div>
+            </motion.div>
+            <motion.div
+              variants={textVariant(0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <div className="   w-[80vw] sm:w-[50vw] mt-2 text-center sm:text-left font-semibold text-base sm:text-xl">
+                {hod.name}
+              </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex md:flex-row flex-col gap-4 mb-8  ">

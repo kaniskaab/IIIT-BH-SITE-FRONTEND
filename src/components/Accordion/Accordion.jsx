@@ -30,7 +30,12 @@ export default function Accordion({ head, para }) {
         style={{ height: toggle ? `${heightEl}` : '0px' }}
         ref={refHeight}
       >
-        <p aria-hidden={toggle ? 'true' : 'false'}>{para}</p>
+        <p
+          aria-hidden={toggle ? 'true' : 'false'}
+          className="md:text-base text-sm"
+        >
+          {para}
+        </p>
       </div>
     </div>
   );
